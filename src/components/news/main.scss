@@ -1,0 +1,31 @@
+.notification-news {
+  max-width: 100%;
+  background-color: #000000dc;
+  color: #fff;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .notification-text {
+    flex-grow: 1;
+    margin-right: 10px;
+    transition: ease-out 1s; /* Adicionando transição de opacidade */
+    text-align: center;
+  }
+
+  .nav-news img {
+    max-width: 25px;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    color: #ffffffb3;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .close-btn img {
+    width: 25px;
+  }
+}

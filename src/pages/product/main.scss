@@ -1,0 +1,232 @@
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$bg-transparent: rgba(255, 255, 255, 0.7);
+$text-color: #333;
+$text-second-color: #d6bebe;
+$btn-second-color: #d6bebe23;
+
+.product-details-container {
+  padding: 2rem;
+
+  .product-main {
+    display: flex;
+    gap: 2rem;
+
+    .product-images {
+      flex: 1;
+
+      .main-image {
+        width: 65%;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .thumbnail-images {
+        display: flex;
+        gap: 0.5rem;
+
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 8px;
+          cursor: pointer;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+
+    .product-info {
+      flex: 1;
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-weight: 400;
+      }
+      .promo-color {
+        color: #058348; // Escolha a cor desejada (exemplo: vermelho)
+        font-weight: bold; // Torna o texto em negrito
+        font-size: 0.9rem; // Ajusta o tamanho do texto (opcional)
+      }
+      .old-price {
+        text-decoration: line-through;
+        color: #aaa;
+        margin-right: 0.5rem;
+        font-weight: 300;
+      }
+      .rating {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        gap: 2px;
+
+        span {
+          color: $text-second-color; // Estrelas douradas
+        }
+
+        small {
+          color: #666;
+        }
+      }
+
+      .description {
+        margin-bottom: 1.5rem;
+      }
+
+      .product-options {
+        margin-bottom: 1.5rem;
+
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+
+        .color-options {
+          display: flex;
+          gap: 0.5rem;
+          .color-item img {
+            width: 50px !important;
+          }
+
+          .color-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+
+            &.black {
+              background: #000;
+            }
+            &.white {
+              background: #fff;
+              border: 1px solid #ccc;
+            }
+            &.red {
+              background: red;
+            }
+          }
+        }
+
+        .size-options {
+          display: flex;
+          gap: 0.1rem;
+
+          .size-btn {
+            padding: 0.5rem 1.5rem;
+            border: 1px solid #dddddd6b;
+            cursor: pointer;
+            border-radius: 1px;
+            background-color: $btn-second-color;
+            color: $text-color;
+            font-weight: 200;
+
+            &:hover {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &.add-to-cart-btn {
+          background-color: transparent;
+          color: $text-color;
+          font-weight: 200;
+          border: 1px solid #3333331a;
+          border-radius: 2px !important;
+          margin: 0 0 5px;
+          padding: 0.5rem 1.2rem;
+          &:hover {
+            background-color: $btn-second-color;
+            transition: 0.3s;
+          }
+        }
+
+        &.add-to-favorites-btn {
+          background-color: transparent;
+          color: $text-color;
+          font-weight: 200;
+          border: 1px solid #3333331a;
+          border-radius: 2px !important;
+          margin: 0 0 5px;
+          &:hover {
+            background-color: $btn-second-color;
+            transition: 0.3s;
+          }
+        }
+        .icon-btn-add {
+          color: #00000075;
+        }
+
+        &.share-btn {
+          background-color: transparent;
+          color: $text-color;
+          display: flex;
+          align-items: center;
+          &:hover {
+            color: $text-second-color;
+          }
+
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  .marketing-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .related-products {
+    margin-top: 4rem;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+
+      .related-card {
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 0.5rem;
+        }
+
+        .price {
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+  }
+}

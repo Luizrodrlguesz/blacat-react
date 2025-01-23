@@ -1,0 +1,101 @@
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$bg-transparent: rgba(255, 255, 255, 0.7);
+$text-color: #333;
+
+.footer-content {
+  background-color: #000000;
+  color: #fff;
+  .footer-tittle {
+    font-size: 20px;
+    color: #ccc !important;
+    font-weight: 300;
+  }
+  .footer-list {
+    list-style: none;
+  }
+  .footer-list a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-weight: 100;
+  }
+  .footer-card-list {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.sub-step-footer {
+  margin-top: 35px !important;
+}
+.step-footer {
+  padding: 30px 0;
+}
+.card-flag {
+  width: 45px;
+  background-color: #ffffff;
+  border-radius: 2px;
+
+  padding: 0;
+}
+
+.signup-btn {
+  border: 1px solid #000 !important;
+  .signin-btn:hover {
+    background-color: #ffffff83 !important;
+    color: #000000 !important;
+  }
+  .signup-btn:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+.banner-responsive {
+  height: 600px;
+  overflow: hidden;
+}
+.numbers-part-edit {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  margin: 0 auto;
+}
+.password-part-edit {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  margin: 0 auto;
+}
+.address-part-edit {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  margin: 0 auto;
+}
+.input-size-pos-number {
+  width: 150px;
+  margin: 0 auto;
+}
+.swiper-container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    color: transparent !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    color: transparent !important;
+  }
+}

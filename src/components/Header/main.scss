@@ -1,0 +1,168 @@
+// Variáveis para cores
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$bg-transparent: rgba(255, 255, 255, 0.7);
+$text-color: #333;
+$text-second-color: #d6bebe;
+
+// Header Styles
+#navbar {
+  background-color: $bg-transparent;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $primary-color; // Ajuste se precisar de outro fundo no scroll
+  }
+  .header-content-main {
+    position: relative;
+  }
+  .header-bg-color {
+    &.bg-transparent {
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    .nav-link {
+      font-size: 19px;
+      font-weight: 300;
+    }
+  }
+  .header-content {
+    position: relative;
+    bottom: 20px;
+    .dropdown-content {
+      display: none !important;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100% !important;
+      height: 20vh;
+      background-color: #f8f9fa;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover .dropdown-content {
+      display: flex !important;
+      width: 100px !important;
+    }
+
+    .dropdown-content a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      padding: 5px 0;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #e9ecef;
+      }
+    }
+  }
+}
+
+.main-logo-nav {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+  position: relative;
+  bottom: 1px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  .nav-link {
+    color: $text-color;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $text-second-color;
+    }
+
+    &.text-secondary {
+      color: $secondary-color;
+    }
+  }
+}
+.text-end {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid $secondary-color;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: 200;
+    width: 200px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $text-second-color;
+      outline: none;
+    }
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px; // Tamanho fixo dos botões
+    height: 40px;
+    &.fav-btn {
+      background-color: transparent;
+      color: $text-color;
+      height: 35px;
+      &:hover {
+        color: $text-second-color;
+        border-top-left-radius: 100%;
+      }
+    }
+    &.signin-btn {
+      background-color: transparent;
+      color: $text-color;
+      height: 35px;
+      &:hover {
+        color: $text-second-color;
+      }
+    }
+    &.signup-btn {
+      background-color: $primary-color;
+      color: $text-color;
+      border: none !important;
+      height: 35px !important;
+      &:hover {
+        color: $text-second-color;
+        border-top-right-radius: 100%;
+      }
+    }
+  }
+}

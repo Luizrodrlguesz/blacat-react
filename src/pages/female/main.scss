@@ -1,0 +1,70 @@
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$bg-transparent: rgba(255, 255, 255, 0.7);
+$text-color: #333;
+$text-second-color: #d6bebe;
+
+.banner {
+  width: 100%;
+  height: 100% !important;
+  .banner-img-woman {
+    width: 100%;
+  }
+}
+.female-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem; // Espaçamento entre o título e a lista
+  a {
+    text-decoration: none !important;
+    color: #333;
+    font-weight: 200;
+    font-size: 20px;
+    &:hover {
+      color: $text-second-color;
+    }
+  }
+  .female-title {
+    text-align: center;
+
+    &__content {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333; // Cor do texto
+      margin: 0; // Remove margem padrão do h1
+    }
+  }
+
+  &__lista {
+    display: flex;
+    flex-wrap: wrap; // Permite quebra de linha se necessário
+    justify-content: center;
+    list-style: none; // Remove marcadores da lista
+    padding: 0;
+    gap: 1rem; // Espaçamento entre os itens da lista
+
+    &-item {
+      &-link {
+        text-decoration: none; // Remove sublinhado
+        color: #333; // Cor padrão do link
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border: 1px solid #e0e0e0; // Borda leve ao redor
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: #f8f9fa; // Fundo ao passar o mouse
+          color: #555; // Texto ao passar o mouse
+        }
+      }
+    }
+  }
+}
+.card-img-top {
+  height: 100% !important;
+  object-fit: contain;
+}
