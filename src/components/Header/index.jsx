@@ -34,7 +34,7 @@ const Header = () => {
       <div>
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li>
+            <li className="logo-header">
               <Link to="/home" className="nav-link px-2 text-secondary">
                 <img
                   className="main-logo-nav"
@@ -120,9 +120,12 @@ const Header = () => {
 
             <div className="text-end">
               <input
-                className=" header-content"
+                className=" header-content header-search"
                 placeholder="Pesquisar"
               ></input>
+              <button className="search-btn header-content">
+                <i class="bi bi-search"></i>
+              </button>
               <button type="button" className="btn fav-btn header-content">
                 <i className="bi bi-heart"></i>
               </button>
@@ -131,6 +134,9 @@ const Header = () => {
               </button>
               <button type="button" className="btn signup-btn header-content">
                 <i className="bi bi-bag"></i>
+              </button>
+              <button className="list-btn header-content">
+                <i class="bi bi-list"></i>
               </button>
             </div>
           </ul>

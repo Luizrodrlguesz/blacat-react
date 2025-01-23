@@ -7,6 +7,43 @@ $text-second-color: #d6bebe;
 
 // Header Styles
 #navbar {
+  @media (max-width: 1200px) {
+    .nav {
+      display: flex;
+      align-items: center;
+
+      li {
+        display: none;
+
+        &:first-child {
+          display: block; // Exibe apenas o logotipo
+        }
+      }
+    }
+    .header-search {
+      display: none;
+    }
+    .search-btn {
+      display: block;
+      &:hover {
+        color: $text-second-color;
+      }
+    }
+    .list-btn {
+      display: block;
+      font-size: 23px;
+      &:hover {
+        color: $text-second-color;
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .logo-header {
+      position: relative;
+      right: 35%;
+    }
+  }
+
   background-color: $bg-transparent;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -126,6 +163,7 @@ $text-second-color: #d6bebe;
       outline: none;
     }
   }
+
   .btn {
     display: flex;
     align-items: center;
@@ -137,13 +175,13 @@ $text-second-color: #d6bebe;
     transition: all 0.3s ease;
     width: 40px; // Tamanho fixo dos botões
     height: 40px;
+
     &.fav-btn {
       background-color: transparent;
       color: $text-color;
       height: 35px;
       &:hover {
         color: $text-second-color;
-        border-top-left-radius: 100%;
       }
     }
     &.signin-btn {
@@ -161,8 +199,17 @@ $text-second-color: #d6bebe;
       height: 35px !important;
       &:hover {
         color: $text-second-color;
-        border-top-right-radius: 100%;
       }
     }
+  }
+  .search-btn {
+    background-color: transparent !important;
+    border: none;
+    display: none;
+  }
+  .list-btn {
+    background-color: transparent !important;
+    border: none;
+    display: none;
   }
 }
