@@ -18,6 +18,7 @@ const App = () => {
       <News />
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/release" element={<Release />} />
         <Route path="/home" element={<Home />} />
         <Route path="/male" element={<Male />} />
