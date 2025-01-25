@@ -193,7 +193,7 @@ $text-second-color: #d6bebe;
       }
     }
     &.signup-btn {
-      background-color: $primary-color;
+      background-color: transparent;
       color: $text-color;
       border: none !important;
       height: 35px !important;
@@ -211,5 +211,111 @@ $text-second-color: #d6bebe;
     background-color: transparent !important;
     border: none;
     display: none;
+    width: 100w;
+    height: 100h;
   }
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.open {
+    transform: translateX(0);
+    transition: 0s;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin: 20px 0;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #f0a500;
+        }
+      }
+    }
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00000000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.modal-search-input::placeholder {
+  font-size: 19px;
+  font-weight: 200;
+}
+.modal-search-input:focus-visible {
+  border: none;
+}
+.modal-search-input:focus-visible {
+  border-color: #007bff;
+  outline: none;
 }

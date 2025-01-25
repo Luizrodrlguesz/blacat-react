@@ -1,39 +1,33 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+.error-page {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   text-align: center;
-  .container {
-    max-width: 600px;
-    .container img {
-      max-width: 100%;
-      height: auto;
-    }
+  background-color: #f5f5f5;
+  color: #333;
+
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
   }
-  .title {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 20px 0;
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-  .message {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  .button {
-    display: inline-block;
+
+  .back-home-btn {
     padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
     background-color: #007bff;
-    color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    .button:hover {
+    text-decoration: none;
+
+    &:hover {
       background-color: #0056b3;
     }
   }

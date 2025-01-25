@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./main.scss";
 
 const Home = () => {
+  const [showControls, setShowControls] = useState(false);
+
   const [rating, setRating] = useState(4);
   const relatedProducts = [
     {
@@ -42,36 +44,37 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="src\assets\banner-1.png" alt="" />
+      <div className=" video-container">
+        <video
+          width="640"
+          height="360"
+          autoPlay
+          loop
+          muted
+          style={{ pointerEvents: "none" }}
+          controls={showControls}
+          onMouseEnter={() => setShowControls(true)}
+          onMouseLeave={() => setShowControls(false)}
+        >
+          <source src="src\assets\blacat-short-v.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
+        <div className="row row-cols-1 row-cols-sm-2 video-message">
+          <div className="col">
+            <p> </p>
           </div>
-          <div class="carousel-item">
-            <img src="src\assets\banner-2.png" alt="" />
-          </div>
-          <div class="carousel-item">
-            <img src="src\assets\banner-4.png" alt="" />
+          <div className="col video-text-marketing">
+            <h3 className="animate-text" style={{ animationDelay: "0s" }}>
+              7 lives and
+            </h3>
+            <h3 className="animate-text" style={{ animationDelay: "2s" }}>
+              Each one has
+            </h3>
+            <h3 className="animate-text" style={{ animationDelay: "4s" }}>
+              7 ways to live
+            </h3>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
       <div class="container">
         <p></p>
@@ -93,6 +96,7 @@ const Home = () => {
           <button className="colection-btn">Ver Coleção</button>
         </div>
       </div>
+
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
           <div class="col">

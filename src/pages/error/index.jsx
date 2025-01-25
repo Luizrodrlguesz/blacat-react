@@ -1,20 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./main.scss";
 
-const Error = () => {
+const ErrorPage = () => {
   return (
-    <div class="container">
-      <img src="" alt="" />
-      <div class="title">Página Não Encontrada</div>
-      <div class="message">
-        Desculpe, mas a página que você está procurando não existe ou foi
-        movida.
-      </div>
-      <a href="/" class="button">
-        Voltar para a Página Inicial
-      </a>
+    <div className="error-page">
+      <h1>404</h1>
+      <p>Oops! The page you're looking for doesn't exist.</p>
+      <Link to="/" className="back-home-btn">
+        Back to Home
+      </Link>
     </div>
   );
 };
 
-export default Error;
+export default ErrorPage;

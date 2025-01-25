@@ -7,10 +7,131 @@ $text-second-color: #d6bebe;
 .banner {
   width: 100%;
   height: 100% !important;
+
   .banner-img-woman {
     width: 100%;
   }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    max-width: 900px;
+    width: 100%;
+
+    h2 {
+      font-size: clamp(3.5rem, 2vw, 3rem);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: clamp(1.7rem, 1.5vw, 1.25rem);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .colection-btn {
+      padding: 10px 20px;
+      font-size: clamp(
+        1.9rem,
+        1.5vw,
+        1rem
+      ); /* Botão também com tamanho fluido */
+      border: none;
+      border-radius: 2px;
+      background-color: #cccccc83;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ecececd0;
+        color: #333;
+      }
+    }
+  }
 }
+
+/* Media queries adicionais para controle fino */
+@media (max-width: 768px) {
+  .banner-text {
+    top: auto;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    padding: 15px;
+
+    h2 {
+      font-size: 1.5rem; /* Diminui ainda mais em telas menores */
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .colection-btn {
+      font-size: 1.15rem !important;
+      padding: 8px 16px !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .banner-text {
+    h2 {
+      font-size: 20px !important; /* Texto principal menor em dispositivos pequenos */
+    }
+
+    p {
+      font-size: 12px !important;
+    }
+
+    .colection-btn {
+      font-size: 0.8rem;
+      padding: 5px 10px !important;
+    }
+  }
+}
+@media (max-width: 435px) {
+  .banner-text {
+    h2 {
+      font-size: 17px !important; /* Texto principal menor em dispositivos pequenos */
+    }
+
+    p {
+      font-size: 10px !important;
+    }
+
+    .colection-btn {
+      font-size: 10px !important;
+      padding: 6px 12px;
+    }
+  }
+}
+@media (max-width: 385px) {
+  .banner-text {
+    h2 {
+      font-size: 15px !important; /* Texto principal menor em dispositivos pequenos */
+    }
+
+    p {
+      font-size: 9px !important;
+    }
+
+    .colection-btn {
+      font-size: 8px !important;
+      padding: 6px 12px;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+}
+
 .female-content {
   display: flex;
   flex-direction: column;

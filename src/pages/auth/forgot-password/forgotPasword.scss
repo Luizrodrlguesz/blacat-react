@@ -1,0 +1,99 @@
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$bg-transparent: rgba(255, 255, 255, 0.7);
+$text-color: #333;
+$text-second-color: #d6bebe;
+$btn-second-color: #d6bebe23;
+$text-second-color-dark: #a79090;
+$text-dark-screen-grey: #999898;
+
+.forgot-password-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+  height: 100vh;
+
+  .forgot-password-header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #000;
+    width: 100vw;
+    height: 15vh;
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 200;
+      color: $text-dark-screen-grey;
+    }
+  }
+
+  .forgot-password-form {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 15px;
+        font-weight: 200;
+        font-size: 18px;
+      }
+
+      input {
+        padding: 10px;
+        border: transparent;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+        font-size: 1rem;
+
+        &:focus {
+          border-color: $text-second-color-dark;
+          transition: 0.4s;
+          outline: none;
+        }
+      }
+    }
+
+    .reset-btn {
+      padding: 10px 20px;
+      background-color: #000000;
+      color: #fff;
+      border: none !important;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: $text-second-color;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .forgot-password-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+
+    a {
+      color: $text-second-color-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
