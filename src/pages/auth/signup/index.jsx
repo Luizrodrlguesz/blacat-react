@@ -17,7 +17,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de validação e envio do formulário
+
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match!");
       return;
@@ -27,13 +27,11 @@ const SignUp = () => {
 
   return (
     <div className="signup-page">
-      {/* Header */}
       <header className="signup-header">
         <h1>Cadastre-se</h1>
         <p>junte-se a nós hoje mesmo e seja parte desse time em ascensão</p>
       </header>
 
-      {/* Form */}
       <form onSubmit={handleSubmit} className="signup-form">
         <div className="form-group">
           <label htmlFor="username">Nome do Usuário</label>

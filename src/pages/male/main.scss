@@ -16,7 +16,7 @@ $text-second-color: #d6bebe;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  gap: 1.5rem; // Espaçamento entre o título e a lista
+  gap: 1.5rem;
   a {
     text-decoration: none !important;
     color: #333;
@@ -32,37 +32,35 @@ $text-second-color: #d6bebe;
     &__content {
       font-size: 2rem;
       font-weight: 600;
-      color: #333; // Cor do texto
-      margin: 0; // Remove margem padrão do h1
+      color: #333;
+      margin: 0;
     }
   }
 
   &__lista {
     display: flex;
-    flex-wrap: wrap; // Permite quebra de linha se necessário
+    flex-wrap: wrap;
     justify-content: center;
-    list-style: none; // Remove marcadores da lista
+    list-style: none;
     padding: 0;
-    gap: 1rem; // Espaçamento entre os itens da lista
+    gap: 1rem;
 
     &-item {
       &-link {
-        text-decoration: none; // Remove sublinhado
-        color: #333; // Cor padrão do link
+        text-decoration: none;
+        color: #333;
         font-size: 1rem;
         font-weight: 500;
         padding: 0.5rem 1rem;
-        border: 1px solid #e0e0e0; // Borda leve ao redor
+        border: 1px solid #e0e0e0;
         border-radius: 5px;
         transition: background-color 0.3s ease, color 0.3s ease;
 
         &:hover {
-          background-color: #f8f9fa; // Fundo ao passar o mouse
-          color: #555; // Texto ao passar o mouse
+          background-color: #f8f9fa;
+          color: #555;
         }
       }
     }
-    
   }
-  
 }

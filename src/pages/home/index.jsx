@@ -37,8 +37,8 @@ const Home = () => {
   return (
     <div>
       <div>
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal text-body-emphasis">Blacat.co</h1>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center ">
+          <img src="src\assets\icon.png" alt="" />
           <p class="fs-5 text-body-secondary">
             O lugar aonde junta seu estilo e conforto para seus dias mais
             tranquilos e tambem para aqueles que ritmo intenso.

@@ -368,7 +368,7 @@ const Offers = () => {
           </div>
         </div>
       </div>
-      {/* Filter Sidebar */}
+
       <div className={`filter-sidebar ${isFilterSidebarOpen ? "open" : ""}`}>
         <button onClick={toggleFilterSidebar} className="close-btn">
           <i className="bi bi-x"></i>

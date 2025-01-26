@@ -10,18 +10,17 @@ const News = () => {
 
   const [currentMessage, setCurrentMessage] = useState(messages[0]);
   const [isVisible, setIsVisible] = useState(true);
-  const [fade, setFade] = useState(false); // Controle do efeito de fade
+  const [fade, setFade] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Adiciona o fade-out
       setFade(true);
 
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % messages.length);
-        setFade(false); // Adiciona o fade-in
-      }, 500); // Tempo de fade-out (deve coincidir com a animação CSS)
+        setFade(false);
+      }, 500);
     }, 5000);
 
     return () => clearInterval(interval);

@@ -4,7 +4,6 @@ import "./main.scss";
 const Release = () => {
   return (
     <div>
-      {/* Banner de StreetWear 2025 */}
       <div className="banner">
         <img
           src="src/assets/offer-1.png"
@@ -23,10 +22,9 @@ const Release = () => {
         </div>
       </div>
 
-      {/* Banner de Roupas de Treino */}
       <div className="banner">
         <img
-          src="src\assets\release-1.png" // Substitua pelo caminho correto da imagem do novo banner
+          src="src\assets\release-1.png"
           alt="Promoção Especial Roupas de Treino"
           className="banner-img-train"
         />

@@ -10,8 +10,6 @@ const Childrens = () => {
   };
   return (
     <div className="container-fluid  bg-body-tertiary">
-      {/* Banner */}
-
       <div className="banner">
         <img
           src="src\assets\childrens-b.png"
@@ -49,9 +47,7 @@ const Childrens = () => {
         </div>
       </div>
 
-      {/* Filtro e Conteúdo Principal */}
       <div className="row row-container">
-        {/* Filtro Lateral */}
         <div className="col-3">
           <div className="filter-panel">
             <h4>Filtros</h4>
@@ -192,12 +188,10 @@ const Childrens = () => {
           </div>
         </div>
 
-        {/* Conteúdo Principal */}
         <div className="col-9 col-size-products">
           <div className="album">
             <div className="container">
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                {/* Card 1 */}
                 <div className="col">
                   <Link to="/product-details" className="text-decoration-none">
                     <div class="card shadow-sm">
@@ -227,7 +221,7 @@ const Childrens = () => {
                     </div>
                   </Link>
                 </div>
-                {/* Adicione mais cards conforme necessário */}
+
                 <div className="col">
                   <Link to="/product-details" className="text-decoration-none">
                     <div class="card shadow-sm">

@@ -1,11 +1,9 @@
-// Variáveis para cores
 $primary-color: #ffffff;
 $secondary-color: #f0f0f0;
 $bg-transparent: rgba(255, 255, 255, 0.7);
 $text-color: #333;
 $text-second-color: #d6bebe;
 
-// Header Styles
 header {
   width: 100vw !important;
 }
@@ -22,7 +20,7 @@ body {
         display: none;
 
         &:first-child {
-          display: block; // Exibe apenas o logotipo
+          display: block;
         }
       }
     }
@@ -60,7 +58,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: $primary-color; // Ajuste se precisar de outro fundo no scroll
+    background-color: $primary-color;
   }
   .header-content-main {
     position: relative;
@@ -179,7 +177,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 40px; // Tamanho fixo dos botões
+    width: 40px;
     height: 40px;
 
     &.fav-btn {
