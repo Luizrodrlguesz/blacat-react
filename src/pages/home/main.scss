@@ -2,6 +2,11 @@ $primary-color: #ffffff;
 $secondary-color: #f0f0f0;
 $bg-transparent: rgba(255, 255, 255, 0.7);
 $text-color: #333;
+$text-second-color: #d6bebe;
+$btn-second-color: #d6bebe23;
+$text-second-color-dark: #a79090;
+$text-dark-screen-grey: #999898;
+$offer-color-text: #058348;
 
 @media (max-width: 1000px) {
   .video-message {
@@ -87,5 +92,71 @@ $text-color: #333;
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0px;
+    color: #333;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .pricing-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: 200;
+      color: $text-color;
+    }
+
+    .discount {
+      font-size: 0.85rem;
+      color: $offer-color-text;
+      font-weight: 400;
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 1px;
+    margin: 10px 0;
+
+    .tag {
+      background-color: #f8f9fa;
+      color: $text-color;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 2px;
+      border: 1px solid #007bff00;
+    }
+  }
+
+  .btn-buy {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin-top: 5px;
+
+    &:hover {
+      background-color: $text-second-color-dark;
+    }
   }
 }

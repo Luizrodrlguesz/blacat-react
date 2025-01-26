@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./main.scss";
 
 const Home = () => {
@@ -100,196 +101,173 @@ const Home = () => {
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-w.jpeg"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized Branca
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-w.jpeg"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-b.webp"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized Preta
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-b.webp"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-r.webp"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized Vermelha
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-r.webp"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <p></p>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-b.webp"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-b.webp"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-r.webp"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-r.webp"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="src\assets\shirt-w.jpeg"
-                class="card-img-top"
-                alt="Card Thumbnail"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Camiseta T-Shirt Basica Blacat Oversized
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Casual
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +10% OFF NO CARRINHO
-                    </button>
+            <Link to="/product-details" className="text-decoration-none">
+              <div class="card shadow-sm">
+                <img
+                  src="src\assets\shirt-w.jpeg"
+                  class="card-img-top"
+                  alt="Camiseta T-Shirt Basica Blacat Oversized"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta T-Shirt Básica Oversized</h5>
+                  <div class="tags">
+                    <span class="tag">Casual</span>
+                    <span class="tag">Confortável</span>
+                    <span class="tag">Unissex</span>
                   </div>
-                  <small class="text-body-secondary">R$100,00 no Pix</small>
+                  <div class="pricing-info">
+                    <span class="price">R$100,00</span>
+                    <span class="discount">+10% OFF no Pix</span>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-buy">
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
+        <hr />
       </div>
       <div className="banner">
         <img

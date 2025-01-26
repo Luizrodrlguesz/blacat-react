@@ -1,3 +1,61 @@
+@media (max-width: 1268px) {
+  .banner-text-right {
+    h2 {
+      font-size: 19px !important;
+    }
+    p {
+      font-size: 15px !important;
+    }
+    button {
+      font-size: 15px !important;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .banner-text-right {
+    h2 {
+      font-size: 16px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+    button {
+      font-size: 12px !important;
+    }
+  }
+}
+@media (max-width: 735px) {
+  .banner-text-right {
+    h2 {
+      font-size: 13px !important;
+    }
+    p {
+      font-size: 10px !important;
+    }
+    button {
+      font-size: 10px !important;
+    }
+  }
+}
+@media (max-width: 555px) {
+  .banner-text-right {
+    h2 {
+      font-size: 11px !important;
+    }
+    p {
+      font-size: 8px !important;
+    }
+    button {
+      font-size: 8px !important;
+    }
+  }
+  .banner-text-right {
+    left: 50% !important;
+  }
+}
+.banner-img-train {
+  width: 100%;
+}
 .banner-text-right {
   position: absolute;
   top: 50%;

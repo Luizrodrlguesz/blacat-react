@@ -6,6 +6,12 @@ $text-color: #333;
 $text-second-color: #d6bebe;
 
 // Header Styles
+header {
+  width: 100vw !important;
+}
+body {
+  width: 100vw !important;
+}
 #navbar {
   @media (max-width: 1200px) {
     .nav {
